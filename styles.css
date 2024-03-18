@@ -1,5 +1,36 @@
+/*Basic css so far, not very desktop or mobile friendly, not responsive yet*/
+/*The only way the seats are wrapping is from the width of the seats-wrapper div which makes me nervous*/
+/*Goals: more responsive design, and have seat rows set up with javascript filtering instead?*/
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#seats-wrapper {
+  background-color: navajowhite;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 450px;
+  margin: 30px;
+}
+
 .seat {
   width: 40px;
   height: 40px;
   border: 1px solid black;
+  background-color: darkseagreen;
+}
+
+.seat:hover {
+  background-color: aquamarine;
+}
+
+#screen {
+  width: 500px;
+  height: 15px;
+  background-color: black;
+  margin: 10px;
 }
