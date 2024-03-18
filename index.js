@@ -64,5 +64,7 @@ const seats = [
 ];
 
 $(document).ready(function () {
-  $("#seats-wrapper").text("test text");
+  seats.forEach((seat) => {
+    $("#seats-wrapper").append(`<div class="seat">${seat.seat}</div>`);
+  });
 });
